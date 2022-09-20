@@ -1,0 +1,91 @@
+
+.banner{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner img{
+    width:100%;
+    height: 500px;
+}
+
+
+
+.row{
+    background-color: azure;
+}
+
+
+#fotodeperfil{
+    box-shadow: 10px 10px  15px #545050;
+    border-radius: 90%;
+   
+}
+
+@media (min-width:575px){
+    #fotodeperfil{
+        
+        position: absolute;
+        top:500px
+        
+    }
+
+}
+
+@media (min-width:700px){
+    #fotodeperfil{
+        
+        position: absolute;
+        top:600px
+        
+    }
+
+}
+@media (min-width:900px){
+    #fotodeperfil{
+        
+        position: absolute;
+        top:700px
+        
+    }
+
+}
+@media (min-width:1200px){
+    #fotodeperfil{
+        
+        position: absolute;
+        top:800px
+        
+    }
+
+}
+@media (min-width:1300px){
+    #fotodeperfil{
+        
+        position: absolute;
+        top:900px
+        
+    }
+
+}
+
+@media (min-width:1500px){
+    #fotodeperfil{
+        
+        position: absolute;
+        top:1000px
+        
+    }
+
+}
+
+@media (min-width:1600px){
+    #fotodeperfil{
+        
+        position: absolute;
+        top:1300px
+        
+    }
+
+}
