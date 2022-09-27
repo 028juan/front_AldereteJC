@@ -1,12 +1,48 @@
 <div class="banner">
-    <img  class="img-fluid"src="../../../assets/tecnologia_informacao.jpg" class="img-fluid"alt="">
+    <img [src]="persona.banner" class="img-fluid">
+    <div class="col">
+        <img [src]="persona.img" class="img-fluid" id="fotodeperfil">
+    </div>
+
     
 
     
 </div>
+<a name="sobremi" id="sobremi"></a>
+<div class="container">
+    
+
+    <div class="row persona">
+      
+        <div class="row row-cols-3 justify-content-center">            
+            <button type="button text-center" class="btn btn-warning boton" *ngIf="isLogged"
+                routerLink="/editper/{{persona.id}}"><i class="bi bi-pencil-fill"></i>EDITAR PERSONA</button>
+        </div>
 
 
-<div class="row container-fluid">
+        
+
+        <div class="col-sm-12 col-lg-7 col-xl-9">
+            <p class="fs-1 text-center fw-bold">{{persona.nombre}}-{{persona.apellido}}</p>
+            <p class="fs-4 text-center fw-bold">{{persona.titulo}}</p>
+            <p class="fs-4 text-center fw-bold">{{persona.localidad}}</p>
+        </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12  text-center " id="sobremip">
+            <p class=" fs-1 fw-bold">Sobre Mi</p>
+            <h3 class=" fs-5 text-center ">{{persona.sobremi}}</h3>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--<div class="row container-fluid">
     <div class="col-xs-12 col-sm-5 col-lg-3">
         <img src="../../../assets/fotoperfil.jpg.jpeg" class="img-fluid " id="fotodeperfil">
     </div>
@@ -23,4 +59,4 @@
         Soy creativo, me aclimato bien para trabajar en equipo, sociable, emprendedor, responsable, proactivo, organizado.
         Todo mi esfuerzo y dedicación, está orientado a lograr implementar todos mis conocimientos, en el campo laboral tecnológico.</p>
 
-</div>
+</div>-->
