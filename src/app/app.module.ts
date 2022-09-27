@@ -18,6 +18,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EditpersonaComponent } from './components/sobre-mi/editpersona.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProyectosComponent,
     LoginComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    EditpersonaComponent
   ],
   imports: [
     BrowserModule,
