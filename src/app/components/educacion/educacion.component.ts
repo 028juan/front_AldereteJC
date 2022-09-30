@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-  edu: Educacion[] = [];
+  edu:Educacion[]=[];
   constructor(private sEducacion: EducacionService, private tokenService: TokenService) { }
 
   isLogged = false;

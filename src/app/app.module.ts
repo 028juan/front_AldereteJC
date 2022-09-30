@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoComponent } from './components/logo/logo.component';
-import { BannerComponent } from './components/banner/banner.component';
+
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component'
@@ -23,13 +23,19 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { interceptorProvider } from './service/interceptor-service';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { EditredComponent } from './components/logo/editred.component';
+import { NewredComponent } from './components/logo/newred.component';
+import { EditSkillsComponent } from './components/skills/edit-skills.component';
+import { NewSkillsComponent } from './components/skills/new-skills.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogoComponent,
-    BannerComponent,
+   
     SobreMiComponent,
     ExperienciaComponent,
     EducacionComponent,
@@ -41,7 +47,13 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     EditpersonaComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
-    EditEducacionComponent
+    EditEducacionComponent,
+    EditredComponent,
+    NewredComponent,
+    EditSkillsComponent,
+    NewSkillsComponent,
+    EditProyectoComponent,
+    NewProyectoComponent
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,30 @@
     
 
 }
-
+.edicion{
+    
+    top:-25px;
+}
+.edicion a{
+    color:black;
+    cursor: pointer;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+}
+.boton{
+    margin-right: 2rem;
+    height: min-content;
+   
+}
+.redes{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 #logoap{
     width: 150px;

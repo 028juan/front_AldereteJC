@@ -1,47 +1,40 @@
+<a id="proyectos"></a>
 <div class="container">
-    <p class="text-start fs-1 fw-bold">Proyectos</p>
-    <div class="row">
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h1>Encriptador</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi temporibus ipsam illo aspernatur doloremque harum, dignissimos veritatis nemo amet ab reiciendis itaque, tempora modi similique expedita perferendis. Porro, ex?</p>
+    <p class="text-center fs-1 fw-bold">Proyectos Realizados
+    </p>
+    <a type="button text-center" class="btn btn-warning boton" routerLink="/nuevapro" *ngIf="isLogged">Nuevo
+        Proyecto</a>
+
+
+    <div class="row proyecto" *ngFor="let Proyecto of pro">
+        <div class="edicion" *ngIf="isLogged">
+            <button class="editar btn mx-2" routerLink="/editpro/{{Proyecto.id}}"><i
+                    class="bi bi-pencil-fill"></i></button>
+            <button class="borrar btn " (click)="delete(Proyecto.id)"><i class="bi bi-trash3"></i></button>
+        </div>
+        <div class="col-md-12 col-lg-6 detalles">
+
+            <h2>{{Proyecto.nombreP}}</h2>
+            <h4>{{Proyecto.descripcionP}}</h4>
+        </div>
+        <div class="col-lg-2 col-xl-2"></div>
+        <div class="col-lg-4 col-xl-4">
+            <img [src]="Proyecto.imgP" class="img-fluid imgproyecto">
+
 
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <a href="https://028juan.github.io/primer-challenge-one-oracle/">
-                <img src="../../../assets/encriptador.png" class="img-fluid">
+        <div class="redes  col-12">
 
-            </a>
-
-        </div>
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h1>Ahorcado</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi temporibus ipsam illo aspernatur doloremque harum, dignissimos veritatis nemo amet ab reiciendis itaque, tempora modi similique expedita perferendis. Porro, ex?</p>
+            <a class="  btn btn-primary btn-lg mx-2" href="{{Proyecto.paginaP}}">Pagina</a>
+            <a class="btn btn-primary btn-lg" href="{{Proyecto.repositorioP}}">Repositorio</a>
 
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <a href=" https://028juan.github.io/challenge-oracle-hangman/">
-                <img src="../../../assets/ahorcado.png" class="img-fluid">
-
-            </a>
-
-        </div>
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h1>Porfolio</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi temporibus ipsam illo aspernatur doloremque harum, dignissimos veritatis nemo amet ab reiciendis itaque, tempora modi similique expedita perferendis. Porro, ex?</p>
-
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <a href="https://028juan.github.io/porfolio-Juan-Carlos/">
-                <img src="../../../assets/porfolio.png" class="img-fluid">
-
-            </a>
-
-        </div>
-
-
 
 
     </div>
 
-</div>
 
+
+
+
+</div>
