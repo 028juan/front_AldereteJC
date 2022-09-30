@@ -19,6 +19,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EditpersonaComponent } from './components/sobre-mi/editpersona.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { interceptorProvider } from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { EditpersonaComponent } from './components/sobre-mi/editpersona.componen
     LoginComponent,
     HomeComponent,
     FooterComponent,
-    EditpersonaComponent
+    EditpersonaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,9 @@ import { EditpersonaComponent } from './components/sobre-mi/editpersona.componen
     FormsModule,
     NgCircleProgressModule.forRoot({})
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -40,6 +40,7 @@ export class EditpersonaComponent implements OnInit {
     
     const id= this.activateRouter.snapshot.params['id'];
     console.log(id)
+    console.log(this.personaS.editPersona(id, this.Persona))
   
     this.personaS.editPersona(id, this.Persona).subscribe(
       data=>{
