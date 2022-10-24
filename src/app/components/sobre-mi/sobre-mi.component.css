@@ -1,14 +1,12 @@
-row{
-    background-color: azure;
-    
-   
-}
+
+
 
 
 .banner img{
    width: 100vw;
-    height: 50vh;
+    max-height: 50vh;
     margin-top: 150px;
+   
 
 }
 
@@ -32,19 +30,52 @@ row{
     box-shadow: 10px 10px 15px #545050;
     width: 200px;
     height: 200px;
-    top: 250px;
+    top: 100px;
     align-content: center;
-    left: 100px;
+    left: 90px;
     border-radius: 90%;
    
 }
 #sobremip{
     border-style: inset;
-    margin-top: 90px;
-    
-   
-  
-    
+    margin-top: 90px;  
     
 
+}
+
+@media (min-width:376px){
+    #fotodeperfil{
+        width: 250px;
+        height: 250px;
+        top: 70px;
+        left: 45px;
+        
+    }
+    
+}
+@media (min-width:500px){
+    #fotodeperfil{
+        
+        top: 120px;
+        
+    }
+    
+}
+@media (min-width:600px){
+    #fotodeperfil{
+        
+        top: 180px;
+        
+    }
+    
+}
+@media (min-width:800px){
+    .banner img{
+     
+         margin-top: 0px;
+     
+     }
+     #fotodeperfil{
+        top:320px;
+     }
 }

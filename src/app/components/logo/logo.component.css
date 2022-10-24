@@ -21,7 +21,7 @@
     flex-direction: column;
 }
 .boton{
-    margin-right: 2rem;
+    
     height: min-content;
    
 }
@@ -54,7 +54,8 @@
     justify-content: flex-end;
 }
 .redes img{
-    width: 4rem;    
+    width: 3rem;
+    height: 2.1rem;    
     padding-left: .6rem;
     padding-right: .6rem;
     border-radius: 50px;
